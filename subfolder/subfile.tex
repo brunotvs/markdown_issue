@@ -1,12 +1,25 @@
 Hello from subfile
 
+
+\section{Relative to this tex}
 \makeatletter
 \input@path
 \makeatother
-
 %This works with relative path
 \input{./tex.tex}
 
+\section{Relative to entry md}
+\makeatletter
+\input@path
+\makeatother
+% This works with relative path to entry
+\markdownInput{./subfolder/markdown.md}
+
+
+\section{Relative to this md}
+\makeatletter
+\input@path
+\makeatother
 % This should also work, with import package
 % and subimport command
 % probably not considering \input@path
