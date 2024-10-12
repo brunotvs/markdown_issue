@@ -1,0 +1,12 @@
+\documentclass{article}
+\usepackage[headerAttributes,citations,jekyllData]{markdown}
+\usepackage{import}
+
+\begin{document}
+Hello
+
+% Thid works
+\markdownInput{./subfolder/markdown.md}
+
+\subimport{./subfolder/}{subfile.tex}
+\end{document}

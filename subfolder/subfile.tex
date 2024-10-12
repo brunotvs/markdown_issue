@@ -1,0 +1,13 @@
+Hello from subfile
+
+\makeatletter
+\input@path
+\makeatother
+
+%This works with relative path
+\input{./tex.tex}
+
+% This should also work, with import package
+% and subimport command
+% probably not considering \input@path
+\markdownInput{./markdown.md}
